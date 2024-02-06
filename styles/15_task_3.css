@@ -1,0 +1,157 @@
+﻿/* стили для задания 15.3 */
+body {
+  background: whitesmoke;
+}
+span {
+  color: blue;
+}
+h1 {
+  text-align: center;
+  font-size: 155%;
+}
+.taskTxtBlock {
+  margin: 0 auto;
+  font-size: 130%;
+  width: 70vw;
+  background: #f5f5f5e0;
+}
+.chatPanel {
+  border: 1px solid gold;
+  position: absolute;
+}
+.chatPanel,
+.chatInput {
+  background: #fff;
+}
+.chatControl,
+.chatWindow {
+  display: flex;
+}
+.chatControl {
+  height: 9%;
+  margin: 2.5% 0px 0px 2%;
+  gap: 2%;
+}
+
+.chatInput,
+.chatWindow,
+.messageBox {
+  border: 5px solid rgb(186, 215, 236);
+}
+.chatWindow,
+.messageBox {
+  cursor: grab;
+}
+.chatWindow:active,
+.messageBox:active {
+  cursor: grabbing;
+}
+
+.chatWindow {
+  width: calc(94.5% - 2px);
+  height: 82%;
+  margin: 2% 1% 0px 2%;
+  overflow-y: auto;
+  flex-flow: column nowrap;
+  gap: 0px;
+}
+.chatInput {
+  position: relative;
+}
+.statusMonitor {
+  position: absolute;
+  top: 14.5%;
+  left: 3%;
+  opacity: 0.8;
+  background: yellow;
+  padding: 2ch;
+  width: 50%;
+}
+.statusMonitor,
+.messageBox {
+  overflow-wrap: anywhere;
+}
+.chatInput {
+  width: 45.5%;
+  height: calc(100% - 11px);
+  padding-left: 1ch;
+  outline: none;
+}
+.buttonChatSend,
+.buttonChatGeo {
+  width: 22%;
+  height: 100%;
+  font-size: 89%;
+  font-family: Sans-Serif;
+  font-weight: 600;
+  background: rgb(186, 215, 236);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.buttonChatSend:active {
+  background: cyan;
+}
+.buttonChatSend::selection,
+.messageBox::selection,
+.chatWindow::selection,
+.buttonChatGeo::selection,
+.statusMonitor::selection {
+  background: transparent;
+}
+
+.chatInput,
+.statusMonitor,
+.messageBox,
+.chatWindow {
+  font-size: 110%;
+  font-family: Sans-Serif;
+}
+.messageBox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  border-radius: 15px;
+  padding: 1ch;
+}
+.clientMessage {
+  margin: 1% 1% 0.5% auto;
+  background: lightcyan;
+}
+.serverMessage {
+  margin: 1% auto 0.5% 1%;
+  background: lavenderblush;
+}
+.baYan {
+  height: 10vw;
+  padding: 0px 16px 0px 1ch;
+  overflow-y: hidden;
+  transition-property: height;
+  transition-duration: 1000ms;
+}
+.baYan:hover {
+  overflow-y: auto;
+  padding-right: 0px;
+  height: calc(30vw + 6em);
+}
+.chatPanel,
+.img1Center,
+.img2Center {
+  box-shadow: 0px 0px 10px 5px lightgray;
+}
+.img1Center,
+.img2Center {
+  margin: 10px auto 10px;
+}
+.img1Center {
+  width: 493px;
+  height: 424px;
+}
+.img2Center {
+  width: 483px;
+  height: 325px;
+}
